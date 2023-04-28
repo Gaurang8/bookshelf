@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart</title>
+
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+  <!-- header section -->
+  <section id="header-section">
+    <div class="header">
+      <div class="nav-logo">
+        <a href="index.html"><h3>BOOKshelf</h3></a>
+      </div>
+
+      <div class="nav-search">
+        <div class="search-box flex">
+          <button><img src="img/icons8-search-100.png" alt=""></button>
+          <div class="inp-box">
+            <input type="text" name=""  placeholder="search.......">
+          </div>
+          <button><img src="img/icons8-multiply-90.png" alt=""></button>
+          <button><img src="img/camera.png" alt=""></button>
+        </div>
+      </div>
+      <div class="nav-icon flex">
+        <div class="user-acc"><img src="img/user.svg" alt=""></div>
+        <div><a href="favorite.html"><img src="img/favorite-64.png" alt=""></a></div>
+        <div><a href="cart.html"><img src="img/cart.svg" alt=""></a></div>
+
+        <div class="nav-toggle" id="navbar-toggle">
+          <img src="img/navtoggle.png" alt="t" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="navbar" id="navbar-link">
+      <div class="account-info">
+        <div class="acco-img flex">
+          <img src="img/myphoto.jpg" alt="">
+        </div>
+        <div class="acc-info flex">
+          <h3>Anonymous</h3>
+          <p class="p2-text">reader</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="aboutus.html">About US</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- login form -->
+
+  <section class="login-form">
+    <div class="close-icon" onclick="close()">X</div>
+    <div class="container form-container">
+      <div class="l-form">
+        <div class="form-heading">
+          <h3>Log In</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="uname" id="uname">
+            <label for="uname">Username</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="password" id="1password">
+            <label for="1password">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>New User ? Create Account <span class="ls-form" onclick="signup()">click here</span></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="s-form">
+        <div class="form-heading">
+          <h3>Sign Up</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="fname" id="fname">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="lname" id="lname">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="password" id="password">
+            <label for="password">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="cpassword" id="cpassword">
+            <label for="cpassword">Confirm Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>Existing User ? Login <span class="ls-form" onclick="login()"> click here</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- cart page -->
+
+<section class="main-cart">
+  <div class="cart-heading flex ">
+    <img src="img/cart.svg" alt="cart img">
+    <h2> My Cart</h2>
+  </div>
+  <div class="container cart-content flex">
+    <div class="cart-items" id="cart-item">
+      <div class="cart-item-heading flex">
+        <div class="cart-i-img">Items</div>
+        <div class="cart-i-name"></div>
+        <div class="cart-i-price">Price</div>
+        <div class="cart-i-quantity">Quantity</div>
+        <div class="cart-i-total">Total</div>
+        <div class="item-remove"></div>
+      </div>
+      <!-- <div class="cart-i flex">
+        <div class="cart-i-img">
+          <img src="img/book1.jpg" alt="book">
+        </div>
+        <div class="cart-i-name"><div class="book-n">The Alchemist</div>
+        <p class="p3-text book-w">Paulo coelho</p></div>
+        <div class="cart-i-price">Rs. 299</div>
+        <div class="cart-i-quantity">
+          <input type="number" name="" min="1" max="20" value="1">
+        </div>
+        <div class="cart-i-total">Rs. 299</div>
+        
+      </div> -->
+    
+    </div>
+    <div class="cart-bill">
+       <!-- <div class="cart-bill-div flex">
+          <h5>
+            Subtotal : 
+          </h5>
+          <p class="p2-text">
+            00
+          </p>
+       </div>
+       <div class="cart-bill-div flex">
+        <h5>Sales Tax : </h5>
+        <p class="p2-text">
+          rs.104
+        </p>
+       </div> -->
+       <div class="cart-bill-div flex">
+        <h5>
+          Coupon Code : 
+        </h5>
+        <p class="p2-text">
+          <a href="">add coupon</a>
+        </p>
+       </div>
+       <div class="cart-bill-grand flex">
+         <h5>Grand Total</h5>
+         <p class="p-text" >Rs 00</p>
+       </div>
+       <div class="cart-checkout">
+        <div>you are eligible for free delivery</div>
+        <div>
+          <button class="check-btn">
+              CheckOut
+          </button>
+        </div>
+       </div>
+
+    </div>
+  </div>
+</section>
+
+  
+
+<script src="script.js"></script>
+<script src="cart.js"></script>
+  
+
+
+</body>
+
+</html>

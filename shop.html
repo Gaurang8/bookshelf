@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop page</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+
+  <!-- header section -->
+  <section id="header-section">
+    <div class="header">
+      <div class="nav-logo">
+        <a href="index.html"><h3>BOOKshelf</h3></a>
+      </div>
+
+      <div class="nav-search">
+        <div class="search-box flex">
+          <button><img src="img/icons8-search-100.png" alt=""></button>
+          <div class="inp-box">
+            <input type="text" name="" placeholder="search.......">
+          </div>
+          <button><img src="img/icons8-multiply-90.png" alt=""></button>
+          <button><img src="img/camera.png" alt=""></button>
+        </div>
+      </div>
+      <div class="nav-icon flex">
+        <div class="user-acc"><img src="img/user.svg" alt=""></div>
+        <div><a href="favorite.html"><img src="img/favorite-64.png" alt=""></a></div>
+        <div><a href="cart.html"><img src="img/cart.svg" alt=""></a></div>
+
+        <div class="nav-toggle" id="navbar-toggle">
+          <img src="img/navtoggle.png" alt="t" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="navbar" id="navbar-link">
+      <div class="account-info">
+        <div class="acco-img flex">
+          <img src="img/myphoto.jpg" alt="">
+        </div>
+        <div class="acc-info flex">
+          <h3>Anonymous</h3>
+          <p class="p2-text">reader</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="aboutus.html">About US</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- login form -->
+
+  <section class="login-form">
+    <div class="close-icon" onclick="close()">X</div>
+    <div class="container form-container">
+      <div class="l-form">
+        <div class="form-heading">
+          <h3>Log In</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="uname" id="uname">
+            <label for="uname">Username</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="password" id="password1">
+            <label for="password1">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>New User ? Create Account <span class="ls-form" onclick="signup()">click here</span></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="s-form">
+        <div class="form-heading">
+          <h3>Sign Up</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="fname" id="fname">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="lname" id="lname">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="password" id="password">
+            <label for="password">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="cpassword" id="cpassword">
+            <label for="cpassword">Confirm Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>Existing User ? Login <span class="ls-form" onclick="login()"> click here</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="s-shop-section">
+    <div class="container s-shop-container">
+      <div class="s-shop-content">
+        <div class="s-shop-heading flex ">
+          <h1>Books</h1>
+        </div>
+        <div class="s-shop-area">
+
+          <div class="s-shop-items">
+            <div class="s-shop-items-head flex">
+              <div class="left">
+                <p class="p2-text">12 books are listed</p>
+              </div>
+              <div class="right flex">
+                <div class="s-sort">
+                  <div class="sort-btn">default sort &nbsp; <span>+</span></div>
+                  <div class="sort-content flex">
+                    <a href="#">Price</a>
+                    <a href="#">Most viewd</a>
+                    <a href="#">Best selling</a>
+                    <a href="#">Trending</a>
+                    <a href="#">New arrival</a>
+                  </div>
+                </div>
+                <div id="filter-icon">
+                  <img src="img/filter.png" alt="filter">
+                </div>
+              </div>
+            </div>
+            <div class="s-book-container flex">
+
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv1.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">The Black Thunder</div>
+                  <p class="p3-text book-w">Riley Peyton</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv1.jpg','The Black Thunder','Riley Peyton',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv1.jpg','The Black Thunder','Riley Peyton',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv2.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">Lightfall</div>
+                  <p class="p3-text book-w">Tim Probert</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv2.jpg','Lightfall','Tim Probert',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv2.jpg','Lightfall','Tim Probert',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv3.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">The Silence killer</div>
+                  <p class="p3-text book-w">sawyer specter</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv3.jpg','The Silence killer','sawyer specter',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv3.jpg','The Silence killer','sawyer specter',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv4.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">Hiking journey</div>
+                  <p class="p3-text book-w">Luis c. mackey</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv4.jpg','Hiking journey','Luis c. mackey',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv4.jpg','Hiking journey','Luis c. mackey',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv5.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">carrie annes world</div>
+                  <p class="p3-text book-w">mark whiteway</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv5.jpg','carrie annes world','mark whiteway',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv5.jpg','carrie annes world','mark whiteway',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/adv6.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">adventures</p>
+                  <div class="book-n">The sun & the star</div>
+                  <p class="p3-text book-w">rick riordan</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">399</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('adv6.jpg','he sun & the star','rick riordan',399)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('adv6.jpg','he sun & the star','rick riordan',399)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf1.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">Interstate</div>
+                  <p class="p3-text book-w">john smith</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf1.jpg','Interstate','john smith',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf1.jpg','Interstate','john smith',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf2.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">Heir to the gift</div>
+                  <p class="p3-text book-w">Jonathan sud</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf2.jpg','Heir to the gift','Jonathan sud',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf2.jpg','Heir to the gift','Jonathan sud',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf3.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">Enceladus</div>
+                  <p class="p3-text book-w">barndon Q. morris</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf3.jpg','Enceladus','barndon Q. morris',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf3.jpg','Enceladus','barndon Q. morris',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf4.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">fight or flight</div>
+                  <p class="p3-text book-w">francisco carpenter</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf4.jpg','fight or flight','francisco carpenter',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf4.jpg','fight or flight','francisco carpenter',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf5.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">The outer space</div>
+                  <p class="p3-text book-w">kimberly hopkins</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf5.jpg','The outer space','kimberly hopkins',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf5.jpg','The outer space','kimberly hopkins',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/sf6.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">science & fiction</p>
+                  <div class="book-n">breaking regulations</div>
+                  <p class="p3-text book-w">victor serrano</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">499</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('sf6.jpg','breaking regulations','victor serrano',499)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('sf6.jpg','breaking regulations','victor serrano',499)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom1.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">meet You before sunset</div>
+                  <p class="p3-text book-w">richard rossor</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom1.jpg','bmeet You before sunset','richard rossor',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom1.jpg','bmeet You before sunset','richard rossor',299)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom2.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">love in the fast lane</div>
+                  <p class="p3-text book-w">amande peterson</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom2.jpg','love in the fast lane','amande peterson',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom2.jpg','love in the fast lane','amande peterson',299)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom3.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">meet halfway</div>
+                  <p class="p3-text book-w">janice anderson</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom3.jpg','meet halfway','janice anderson',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom3.jpg','meet halfway','janice anderson',299)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom4.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">spark</div>
+                  <p class="p3-text book-w">anna wright</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom4.jpg','spark','anna wrightn',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom4.jpg','spark','anna wrightn',299)"><a href="#"><img src="img/cart.svg"
+                          alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom5.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">our last summer</div>
+                  <p class="p3-text book-w">claudia wilson</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom5.jpg','our last summer','claudia wilson',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom5.jpg','our last summer','claudia wilson',299)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="s-book-card">
+                <div class="s-book-card-img flex">
+                  <img src="img/rom6.jpg" alt="book-img">
+                </div>
+                <div class="s-book-card-disc flex">
+                  <p class="p3-text book-c">Romantic</p>
+                  <div class="book-n">say youll be mine</div>
+                  <p class="p3-text book-w">kate hunt</p>
+                  <div class="rating-img"><img src="img/rating.png" alt="rating"></div>
+                  <div class="book-p">299</div>
+                  <div class="s-book-card-btn">
+
+                    <div><a href="#"><img src="img/share.png" alt=""></a></div>
+                    <div onclick="addtofav('rom6.jpg','say youll be mine','kate hunt',299)"><a href="#"><img
+                          src="img/favorite-64.png" alt="like"></a></div>
+                    <div onclick="addtocart('rom6.jpg','say youll be mine','kate hunt',299)"><a href="#"><img
+                          src="img/cart.svg" alt="add to cart"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex s-shop-filter">
+            <div class="s-sidebar-title">
+              Filter
+            </div>
+            <div class="summary-box">
+
+              <div class="s-summary">
+                <input type="checkbox" name="" id="featured">
+                <label for="featured"><span>Authors</span><i>+</i></label>
+                <div class="s-summary-items">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="m1" />
+                      <label for="m1"><a href=""> Chetan bhagat</a></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="m2" />
+                      <label for="m2">Agatha Christie</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="m3" />
+                      <label for="m3">Dr.Sarad Thakar</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="m4" />
+                      <label for="m4">Amish Tripathi</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="m5" />
+                      <label for="m5">Jules Verne</label>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="summary-box">
+              <div class="s-summary">
+                <input type="checkbox" name="" id="cat">
+                <label for="cat"><span>category</span><i>+</i></label>
+                <div class="s-summary-items">
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="n1" />
+                      <label for="n1"><a href=""> adventures</a></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="n2" />
+                      <label for="n2">science & fiction</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="n3" />
+                      <label for="n3">Romantic</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="n4" />
+                      <label for="n4">horrer</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="n5" />
+                      <label for="n5">biography</label>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="summary-box">
+              <div class="s-summary">
+                <input type="checkbox" name="" id="rat">
+                <label for="rat"><span>rating</span><i>+</i></label>
+                <div class="s-summary-items">
+
+                  <ul>
+                    <li>
+                      <input type="checkbox" id="s1" />
+                      <label for="s1"><a href="">5 star</a></label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="s2" />
+                      <label for="s2">4 star</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="s3" />
+                      <label for="s3">3 star</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="s4" />
+                      <label for="s4">2 star</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="s5" />
+                      <label for="s5">1 star</label>
+                    </li>
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="footer">
+    <div class="container">
+      <div class="top-footer padding-1 flex">
+        <div class="subscribe">
+          <div class="subscribe-head flex">
+            <img src="img/envelope-outline.svg" alt="icon" width="50px" height="50px">
+            <p style="margin: 0;">Subscribe to get Updates of Book on email</p>
+          </div>
+          <div class="subscribe-inp flex">
+            <div class="inp-div"><input type="text" name="uname" class="form-inp" placeholder="Enter Your name">
+            </div>
+            <div class="inp-div"><input type="email" name="email" class="form-inp" placeholder="Enter email">
+            </div>
+            <div class="inp-btn"><input type="button" value=" Log in" class="primary-btn"></div>
+
+          </div>
+        </div>
+
+        <!-- <div class="footer-img">
+              <img src="img/footer-img.png" alt="" >
+      </div> -->
+        <!-- <div></div> -->
+      </div>
+
+      <div class="bottom-footer padding-1 flex">
+        <div class="footer-col-1 flex">
+          <div>
+            <h2>BookShelf</h2>
+          </div>
+          <div>
+            <p style="font-size: 16px;">visit our offline store</p>
+          </div>
+          <div>
+            <h4><strong>Contact</strong></h4>
+          </div>
+          <div>
+            <p><strong>Address: </strong>hari om society, lathidad, botad</p>
+            <p><strong>Phone:</strong>+91 9875139782 /+91 0101010101</p>
+            <p><strong>Time:</strong>Mon-Sat (9:00AM - 10:00PM)</p>
+          </div>
+          <div>
+            <h4><strong>Follow Us</strong></h4>
+          </div>
+          <div>Icon</div>
+        </div>
+        <div class="footer-col-2 flex">
+          <div class="footer-col-2-1 flex">
+            <h4><strong>About</strong></h4>
+            <a href="">About Us</a>
+            <a href="">Delivery information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Condition</a>
+            <a href="">Contact us</a>
+          </div>
+          <div class="footer-col-2-2 flex">
+            <h4><strong>My Account</strong></h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Whishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+          </div>
+        </div>
+        <div class="footer-col-3 flex">
+          <h4><strong>Install App</strong></h4>
+          <p>From App Store Or Google Play</p>
+          <div><button class="primary-btn">App Store</button><button class="primary-btn">Google Play</button></div>
+          <p>Secured Payment</p>
+          <div>Image(upi,debit-card)</div>
+        </div>
+      </div>
+      <hr>
+      <div class="copywrite padding-1">
+        <div>
+          <p class="p3-text"> Copyright ©2023. All Rights Reserved.</p>
+        </div>
+        <div>
+          <p class="p3-text"><a href="">Term & Condition</a></p>
+          <p class="p3-text"><a href="">Privacy-Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script>
+
+    const filtericon = document.getElementById('filter-icon')
+    const shopfilter = document.getElementsByClassName('s-shop-filter')
+
+
+    filtericon.addEventListener('click', () => {
+      shopfilter[0].classList.toggle('s-shop-active')
+    })
+
+
+  </script>
+
+  <script>
+    function addtocart(cImg, cName, cAuthor, cPrice) {
+
+      list_i = [cImg, cName, cAuthor, cPrice, 1]
+
+      if (isalreadyincart(list_i) == true) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        cartItems.push(list_i)
+        localStorage.setItem('cartItems', JSON.stringify(cartItems))
+
+        alert("Added");
+
+      }
+      else {
+        alert("Already in cart");
+      }
+
+    }
+
+    function isalreadyincart(list_i) {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+      for (let i = 0; i < cartItems.length; i++) {
+
+
+        if (cartItems[i][1] == list_i[1] && cartItems[i][2] == list_i[2]) {
+          return false;
+        }
+      }
+      return true;
+    }
+    function addtofav(cImg, cName, cAuthor, cPrice) {
+
+      list_j = [cImg, cName, cAuthor, cPrice, 1]
+
+      if (isalreadyinfav(list_j) == true) {
+        const favItems = JSON.parse(localStorage.getItem('favItems')) || [];
+
+        favItems.push(list_j)
+        localStorage.setItem('favItems', JSON.stringify(favItems))
+
+        alert("Added");
+
+      }
+      else {
+        alert("Already in favorite");
+      }
+
+    }
+
+    function isalreadyinfav(list_j) {
+      const favItems = JSON.parse(localStorage.getItem('favItems')) || []
+      for (let i = 0; i < favItems.length; i++) {
+
+
+        if (favItems[i][1] == list_j[1] && favItems[i][2] == list_j[2]) {
+          return false;
+        }
+      }
+      return true;
+    }
+  </script>
+
+  <script>
+    const mainelement = document.getElementsByClassName('s-book-card')
+
+    for (i = 0; i < mainelement.length; i++) {
+      const mainimg = mainelement[i].querySelector('.s-book-card-img').getElementsByTagName('img')[0]
+
+      const mainname = mainelement[i].querySelector('.book-n').innerHTML
+      const maincat = mainelement[i].querySelector('.book-c').innerHTML
+      
+      const mainwri = mainelement[i].querySelector('.book-w').innerHTML
+      const mainprice = mainelement[i].querySelector('.book-p').innerHTML
+
+      mainimg.onclick = function (){
+        const mainItems = JSON.parse(localStorage.getItem('mainItems')) || [];
+
+        mainItems[0] = [mainimg.getAttribute('src') , mainname , maincat , mainwri , mainprice]
+        localStorage.setItem('mainItems', JSON.stringify(mainItems))
+
+        window.location.href='bshop.html';
+
+      }
+    }
+  </script>
+</body>
+
+</html>
+

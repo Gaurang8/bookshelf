@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookShelf Website</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+
+
+  <!-- header section -->
+  <section id="header-section">
+    <div class="header">
+      <div class="nav-logo">
+        <h3>BOOKshelf</h3>
+      </div>
+
+      <div class="nav-search">
+        <div class="search-box flex">
+          <button><img src="img/icons8-search-100.png" alt=""></button>
+          <div class="inp-box">
+            <input type="search" name="" placeholder="search.......">
+          </div>
+          <button><img src="img/icons8-multiply-90.png" alt=""></button>
+          <button><img src="img/camera.png" alt=""></button>
+        </div>
+      </div>
+      <div class="nav-icon flex">
+        <div class="user-acc"><img src="img/user.svg" alt=""></div>
+        <div><a href="favorite.html"><img src="img/favorite-64.png" alt=""></a></div>
+        <div><a href="cart.html"><img src="img/cart.svg" alt=""></a></div>
+
+        <div class="nav-toggle" id="navbar-toggle">
+          <img src="img/navtoggle.png" alt="t" width="100%">
+        </div>
+      </div>
+    </div>
+    <div class="navbar" id="navbar-link">
+      <div class="account-info">
+        <div class="acco-img flex">
+          <img src="img/myphoto.jpg" alt="">
+        </div>
+        <div class="acc-info flex">
+          <h3>Anonymous</h3>
+          <p class="p2-text">reader</p>
+        </div>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="aboutus.html">About US</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- login form -->
+
+  <section class="login-form">
+    <div class="close-icon" onclick="close()">X</div>
+    <div class="container form-container">
+      <div class="l-form">
+        <div class="form-heading">
+          <h3>Log In</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="uname" id="uname">
+            <label for="uname">Username</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="password" id="password1">
+            <label for="password1">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>New User ? Create Account <span class="ls-form" onclick="signup()">click here</span></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="s-form">
+        <div class="form-heading">
+          <h3>Sign Up</h3>
+        </div>
+        <form action="" class="m-form">
+          <div class="inp-div">
+            <input type="text" name="fname" id="fname">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="text" name="lname" id="lname">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="inp-div">
+            <input type="email" name="email" id="email">
+            <label for="email">Email</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="password" id="password">
+            <label for="password">Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="password" name="cpassword" id="cpassword">
+            <label for="cpassword">Confirm Password</label>
+          </div>
+          <div class="inp-div">
+            <input type="submit" value="Submit">
+          </div>
+          <div class="inp-div f-section">
+            <div>Forgot Password ? <span>click here</span></div>
+            <div>Existing User ? Login <span class="ls-form" onclick="login()"> click here</span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!--  hero - section -->
+  <section class="hero-section flex">
+    <div class="container hero-content flex">
+      <div class="hero-img">
+        <img src="img/hero-png.png" alt="image" width="100%">
+      </div>
+      <div class="hero-text flex">
+        <p class="p2-text hero-text-head">BOOKstore</p>
+        <h1>So many Books, so little Time </h1>
+        <p class="p2-text hero-text-dis"><span>READ...</span> so you never feel alone <br><br> Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Consectetur beatae totam nemo.</p>
+        <button href="#">
+          Get Started
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!--  feature section -->
+
+  <section class="feature-section container">
+    <div class="feature-content flex padding-1">
+      <div class="feature-item flex">
+        <div class="feature-item-text">
+          <h4> <strong>Free Delivery</strong></h4>
+          <p class="p3-text">over 300rs cart value <br>all over india </p>
+        </div>
+        <div class="feature-img">
+          <img src="img/feature2.png" alt="png">
+        </div>
+      </div>
+      <div class="feature-item flex">
+        <div class="feature-item-text">
+          <h4> <strong>Secured Payment</strong></h4>
+          <p class="p3-text">your money is secured prefer card payment </p>
+        </div>
+        <div class="feature-img">
+          <img src="img/feature5.png" alt="png">
+        </div>
+      </div>
+      <div class="feature-item flex">
+        <div class="feature-item-text">
+          <h4> <strong>24 haur Support</strong></h4>
+          <p class="p3-text">Our team is always with you to support 24 haur </p>
+        </div>
+        <div class="feature-img">
+          <img src="img/feature6.png" alt="png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- best selling book -->
+
+  <section>
+    <div class="container padding-2 best-selling">
+      <div class="book-div-heading ">
+        <h1>Best Selling book</h1>
+      </div>
+      <div class="book-card-container flex">
+        <div class="book-card">
+          <div class="book-img flex">
+            <img src="img/book1.jpg" alt="book">
+          </div>
+          <div class="book-disc flex">
+            <div class="book-name">
+              <h3>The Alchemist</h3>
+            </div>
+            <div class="book-author">
+              <p class="p2-text">paulo coelho</p>
+            </div>
+            <div class="book-price"> 299</div>
+            <div><a href="#" class="secondary-btn"
+                onclick="addtocart('book1.jpg', 'The Alchemist', 'paulo coelho', 299)">Buy</a></div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-img flex">
+            <img src="img/book3.jpg" alt="book">
+          </div>
+          <div class="book-disc flex">
+            <div class="book-name">
+              <h3>Aeklo Jane Re</h3>
+            </div>
+            <div class="book-author">
+              <p class="p2-text">Dr. Sarad Thakar</p>
+            </div>
+            <div class="book-price"> 299</div>
+            <div><a href="#" class="secondary-btn"
+                onclick="addtocart('book3.jpg', 'Aeklo Jane Re', 'Dr. Sarad Thakar', 299)">Buy</a></div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-img flex">
+            <img src="img/book3-1.jpg" alt="book">
+          </div>
+          <div class="book-disc flex">
+            <div class="book-name">
+              <h3>Agartha Ni safare</h3>
+            </div>
+            <div class="book-author">
+              <p class="p2-text">Dr. I K vijaliwala</p>
+            </div>
+            <div class="book-price"> 299</div>
+            <div><a href="#" class="secondary-btn"
+                onclick="addtocart('book3-1.jpg', 'Agartha Ni safare', 'Dr. I K vijaliwala', 299)">Buy</a></div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-img flex">
+            <img src="img/book4.jpg" alt="book">
+          </div>
+          <div class="book-disc flex">
+            <div class="book-name">
+              <h3>Khovayela Ni Khojama</h3>
+            </div>
+            <div class="book-author">
+              <p class="p2-text">Jules Vern</p>
+            </div>
+            <div class="book-price"> 299</div>
+            <div><a href="#" class="secondary-btn"
+                onclick="addtocart('book4.jpg', 'Khovayela Ni Khojama', 'Jules Vern', 299)">Buy</a></div>
+          </div>
+        </div>
+        <div class="book-card">
+          <div class="book-img flex">
+            <img src="img/book1.jpg" alt="book">
+          </div>
+          <div class="book-disc flex">
+            <div class="book-name">
+              <h3>The Alchemist</h3>
+            </div>
+            <div class="book-author">
+              <p class="p2-text">paulo coelho</p>
+            </div>
+            <div class="book-price"> 299</div>
+            <div><a href="#" class="secondary-btn"
+                onclick="addtocart('book1.jpg', 'The Alchemist', 'paulo coelho', 299)">Buy</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- offer-section  -->
+  <section>
+    <div class="offer-section container padding-1  flex ">
+      <div class="offer-section-img">
+        <img src="img/bunch2.jpg" alt="book-img" class="offer-s-i-1">
+        <img src="img/bunch1.avif" alt="book-img" class="offer-s-i-2">
+        <img src="img/books.jpg" alt="book-img" class="offer-s-i-3">
+      </div>
+      <div class="offer-dis flex">
+        <p class="p2-text">Best Deal</p>
+        <h2> <strong> Get </strong> </h2>
+        <h2><strong> Dozen of Book </strong></h2>
+        <p class="p-text">At just 1499 rs.</p>
+        <a href="#" class="primary-btn">claim</a>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- all time best -->
+
+
+  <section class="all-time-book-section">
+    <div class="container padding-2 all-time-best">
+      <div class="book-div-heading ">
+        <h1>All time best </h1>
+      </div>
+      <div class="b-c-container flex">
+        <div class="book-card-c-text flex">
+          <h1>most popular at one place</h1>
+          <p class="p2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequuntur veritatis et
+            adipisci beatae dolore id?</p>
+          <button class="secondary-btn">Explore</button>
+        </div>
+        <div class="book-card-c-items book-card-container flex">
+          <div class="book-card">
+            <div class="book-img flex">
+              <img src="img/book1.jpg" alt="book">
+            </div>
+            <div class="book-disc flex">
+              <div class="book-name">
+                <h3>The Alchemist</h3>
+              </div>
+              <div class="book-author">
+                <p class="p2-text">paulo coelho</p>
+              </div>
+              <div class="book-price"> 299</div>
+              <div><a href="#" class="secondary-btn"
+                  onclick="addtocart('book1.jpg', 'The Alchemist', 'paulo coelho', 299)">Buy</a></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-img flex">
+              <img src="img/book3.jpg" alt="book">
+            </div>
+            <div class="book-disc flex">
+              <div class="book-name">
+                <h3>Aeklo Jane Re</h3>
+              </div>
+              <div class="book-author">
+                <p class="p2-text">Dr. Sarad Thakar</p>
+              </div>
+              <div class="book-price"> 299</div>
+              <div><a href="#" class="secondary-btn"
+                  onclick="addtocart('book3.jpg', 'Aeklo Jane Re', 'Dr. Sarad Thakar', 299)">Buy</a></div>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-img flex">
+              <img src="img/book3-1.jpg" alt="book">
+            </div>
+            <div class="book-disc flex">
+              <div class="book-name">
+                <h3>Agartha Ni safare</h3>
+              </div>
+              <div class="book-author">
+                <p class="p2-text">Dr. I K vijaliwala</p>
+              </div>
+              <div class="book-price "> 299</div>
+              <div><a href="#" class="secondary-btn"
+                  onclick="addtocart('book3-1.jpg', 'Agartha Ni safare', 'Dr. I K vijaliwala', 299)">Buy</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+ 
+
+  <div class="container">
+    <div class="book-div-heading ">
+      <h1>What our customer said</h1>
+    </div>
+  </div>
+  <div class="reviews-container">
+    <div class="review-row flex">
+      <div class="review-column">
+        <div class="review-img">
+          <img src="img/myphoto.jpg" alt="image">
+        </div>
+        <div>
+          <div class="review-text">
+            <p class="p2-text">
+              dolor sit amet consectetur adipisicing elit. Architecto itaque debitis minima porro assumenda atque
+              dolor distinctio perspiciatis omnis sequi ipsa unde fugit, ipsum, tenetur quidem molestias autem in
+              vero, earum dolores dolorem? Ipsum, officiis.
+            </p>
+            <div>
+              <p class="p2-text cust-name"><span>Gaurang</span> lorem lorem </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="review-column">
+        <div class="review-img">
+          <img src="img/myphoto.jpg" alt="image">
+        </div>
+        <div>
+          <div class="review-text">
+            <p class="p2-text">
+              ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque debitis minima porro assumenda
+              atque dolor distinctio perspiciatis omnis sequi ipsa unde fugit, ipsum, tenetur quidem molestias autem
+              in vero, earum dolores dolorem? Ipsum, officiis.
+            </p>
+            <div>
+              <p class="p2-text cust-name"><span>Gaurang</span> lorem lorem </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="review-column">
+        <div class="review-img">
+          <img src="img/myphoto.jpg" alt="image">
+        </div>
+        <div>
+          <div class="review-text">
+            <p class="p2-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto itaque debitis minima porro
+              assumenda atque dolor distinctio perspiciatis omnis sequi ipsa unde fugit, ipsum, tenetur quidem
+              molestias autem in vero, earum dolores dolorem? Ipsum, officiis.
+            </p>
+            <div>
+              <p class="p2-text cust-name"><span>Gaurang</span> lorem lorem </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--  offer section  -->
+
+  <section class="offer">
+    <div class="offer-container container padding-1 flex">
+      <div class="row-1 flex">
+        <div class="offer-banner-1">
+          <h3>carzy deal</h3>
+          <h2>Buy 1 Get 1 free </h2>
+          <p class="p3-text"> on any educational book</p>
+          <button class="secondary-btn">Learn More</button>
+        </div>
+        <div class="offer-banner-2">
+          <h3>carzy deal</h3>
+          <h2>Get Full pack </h2>
+          <p class="p3-text"> purchase any series of book at 40% off</p>
+          <button class="secondary-btn">Get the deal</button>
+        </div>
+      </div>
+      <div class="row-2 flex">
+        <div class="offer-banner-3">
+          <h3>carzy deal</h3>
+          <h2>seasonal offer </h2>
+          <p class="p3-text"> upto 50% off</p>
+        </div>
+        <div class="offer-banner-4">
+          <h3>carzy deal</h3>
+          <h2>New arrivals</h2>
+          <p class="p3-text"> Lorem ipsum dolor sit amet consectetur adipisicing. </p>
+          <button class="secondary-btn">Explore</button>
+        </div>
+        <div class="offer-banner-5">
+          <h3>Wait end</h3>
+          <h2>upcoming Book </h2>
+          <p class="p3-text"> Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+
+  <section class="footer">
+    <div class="container">
+      <div class="top-footer padding-1 flex">
+        <div class="subscribe">
+          <div class="subscribe-head flex">
+            <img src="img/envelope-outline.svg" alt="icon" width="50px" height="50px">
+            <p style="margin: 0;">Subscribe to get Updates of Book on email</p>
+          </div>
+          <div class="subscribe-inp flex">
+            <div class="inp-div"><input type="text" name="uname" class="form-inp" placeholder="Enter Your name">
+            </div>
+            <div class="inp-div"><input type="email" name="email" class="form-inp" placeholder="Enter email">
+            </div>
+            <div class="inp-btn"><input type="button" value=" Log in" class="primary-btn"></div>
+
+          </div>
+        </div>
+
+        <!-- <div class="footer-img">
+              <img src="img/footer-img.png" alt="" >
+      </div> -->
+        <!-- <div></div> -->
+      </div>
+
+      <div class="bottom-footer padding-1 flex">
+        <div class="footer-col-1 flex">
+          <div>
+            <h2>BookShelf</h2>
+          </div>
+          <div>
+            <p style="font-size: 16px;">visit our offline store</p>
+          </div>
+          <div>
+            <h4><strong>Contact</strong></h4>
+          </div>
+          <div>
+            <p><strong>Address: </strong>hari om society, lathidad, botad</p>
+            <p><strong>Phone:</strong>+91 9875139782 /+91 0101010101</p>
+            <p><strong>Time:</strong>Mon-Sat (9:00AM - 10:00PM)</p>
+          </div>
+          <div>
+            <h4><strong>Follow Us</strong></h4>
+          </div>
+          <div>Icon</div>
+        </div>
+        <div class="footer-col-2 flex">
+          <div class="footer-col-2-1 flex">
+            <h4><strong>About</strong></h4>
+            <a href="">About Us</a>
+            <a href="">Delivery information</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Condition</a>
+            <a href="">Contact us</a>
+          </div>
+          <div class="footer-col-2-2 flex">
+            <h4><strong>My Account</strong></h4>
+            <a href="">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Whishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+          </div>
+        </div>
+        <div class="footer-col-3 flex">
+          <h4><strong>Install App</strong></h4>
+          <p>From App Store Or Google Play</p>
+          <div><button class="primary-btn">App Store</button><button class="primary-btn">Google Play</button></div>
+          <p>Secured Payment</p>
+          <div>Image(upi,debit-card)</div>
+        </div>
+      </div>
+      <hr>
+      <div class="copywrite padding-1">
+        <div>
+          <p class="p3-text"> Copyright ©2023. All Rights Reserved.</p>
+        </div>
+        <div>
+          <p class="p3-text"><a href="">Term & Condition</a></p>
+          <p class="p3-text"><a href="">Privacy-Policy</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+ 
+
+  <script>
+
+    function addtocart(cImg, cName, cAuthor, cPrice) {
+
+      list_i = [cImg, cName, cAuthor, cPrice, 1]
+
+      if (isalreadyincart(list_i) == true) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+        cartItems.push(list_i)
+        localStorage.setItem('cartItems', JSON.stringify(cartItems))
+
+        alert("Added");
+
+      }
+      else {
+        alert("Already in cart");
+      }
+
+    }
+
+    function isalreadyincart(list_i) {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+      for (let i = 0; i < cartItems.length; i++) {
+
+
+        if (cartItems[i][1] == list_i[1] && cartItems[i][2] == list_i[2]) {
+          return false;
+        }
+      }
+      return true;
+    }
+  </script>
+
+
+  <script>
+    const mainelement = document.getElementsByClassName('book-card')
+
+    for (i = 0; i < mainelement.length; i++) {
+      const mainimg = mainelement[i].querySelector('.book-img').getElementsByTagName('img')[0]
+
+      const mainname = mainelement[i].querySelector('.book-name').getElementsByTagName('h3')[0].innerHTML
+
+      const mainwri = mainelement[i].querySelector('.book-author').getElementsByTagName('p')[0].innerHTML
+      const mainprice = mainelement[i].querySelector('.book-price').innerHTML
+
+      mainimg.onclick = function () {
+        const mainItems = JSON.parse(localStorage.getItem('mainItems')) || [];
+
+        mainItems[0] = [mainimg.getAttribute('src'), mainname, 'category', mainwri, mainprice]
+        localStorage.setItem('mainItems', JSON.stringify(mainItems))
+
+        window.location.href = 'bshop.html';
+
+      }
+    }
+  </script>
+</body>
+
+</html>
