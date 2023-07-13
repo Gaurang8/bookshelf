@@ -24,7 +24,6 @@ body {
 }
 
 
-
 h3,
 h4,
 h5,
@@ -849,6 +848,7 @@ a {
 
 .top-footer {
     width: 100%;
+    background-color: var(--bgcolor1);
     padding-block: 0;
     min-height: 200px;
     justify-content: flex-start;
